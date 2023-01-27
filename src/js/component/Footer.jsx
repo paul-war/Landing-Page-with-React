@@ -16,7 +16,7 @@ Footer.PropTypes = {
 };
 
 Footer.defaultProps = {
-    footerText: "Copiright @ Your Website 2023",
+    footerText: "Copiright @ PaulWar",
 };
 
 export default Footer;
