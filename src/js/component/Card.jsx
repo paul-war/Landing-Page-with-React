@@ -12,7 +12,7 @@ const Card = (props) => {
                     <p className="card-text text-center">{props.pText}</p>
                 </div>
                 <div className="card-footer">
-                    <a href="#"className="btn btn-primary btn-lg d-flex justify-content-center" type="button">{props.buttonText}</a>
+                    <a href={props.href}className="btn btn-primary btn-lg d-flex justify-content-center" type="button">{props.buttonText}</a>
                 </div>
                 </div>
             </div>
@@ -24,7 +24,7 @@ const Card = (props) => {
                     <p className="card-text text-center">{props.pText}</p>
                 </div>
                 <div className="card-footer">
-                    <a href="#"className="btn btn-primary btn-lg d-flex justify-content-center" type="button">{props.buttonText}</a>
+                    <a href={props.href}className="btn btn-primary btn-lg d-flex justify-content-center" type="button">{props.buttonText}</a>
                 </div>
                 </div>
             </div>
@@ -36,7 +36,7 @@ const Card = (props) => {
                     <p className="card-text text-center">{props.pText}</p>
                 </div>
                 <div className="card-footer">
-                    <a href="#"className="btn btn-primary btn-lg d-flex justify-content-center" type="button">{props.buttonText}</a>
+                    <a href={props.href}className="btn btn-primary btn-lg d-flex justify-content-center" type="button">{props.buttonText}</a>
                 </div>
                 </div>
             </div>
@@ -48,7 +48,7 @@ const Card = (props) => {
                     <p className="card-text text-center">{props.pText}</p>
                 </div>
                 <div className="card-footer">
-                    <a href="#"className="btn btn-primary btn-lg d-flex justify-content-center" type="button">{props.buttonText}</a>
+                    <a href={props.href}className="btn btn-primary btn-lg d-flex justify-content-center" type="button">{props.buttonText}</a>
                 </div>
                 </div>
             </div>
@@ -61,6 +61,7 @@ Card.PropTypes = {
     cardTitle: PropTypes.string,
     pText: PropTypes.string,
     buttonText: PropTypes.string,
+    href: PropTypes.string,
 };
 
 Card.defaultProps = {
@@ -68,6 +69,7 @@ Card.defaultProps = {
     cardTitle: "Card Title",
     pText: "Lorem Ipsum Sanctum Totum Locum viajum a la Quiacum Argentinum morte cuore et Punguen Manoteen Billeteren",
     buttonText: "Find Out More!",
+    href: "https://github.com/paul-war"
 };
 
 export default Card;
