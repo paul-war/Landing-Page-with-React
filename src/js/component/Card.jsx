@@ -8,8 +8,8 @@ const Card = (props) => {
                 <div className="card h-100 ">
                 <img src={props.cardSrc} className="card-img-top" alt="..."/>
                 <div className="card-body ">
-                    <h5 className="card-title">{props.cardTitle}</h5>
-                    <p className="card-text">{props.pText}</p>
+                    <h5 className="card-title text-center">{props.cardTitle}</h5>
+                    <p className="card-text text-center">{props.pText}</p>
                 </div>
                 <div className="card-footer">
                     <a href="#"className="btn btn-primary btn-lg d-flex justify-content-center" type="button">{props.buttonText}</a>
@@ -20,8 +20,8 @@ const Card = (props) => {
                 <div className="card h-100">
                 <img src={props.cardSrc} className="card-img-top" alt="..." />
                 <div className="card-body">
-                    <h5 className="card-title">{props.cardTitle}</h5>
-                    <p className="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    <h5 className="card-title text-center">{props.cardTitle}</h5>
+                    <p className="card-text text-center">This card has supporting text below as a natural lead-in to additional content.</p>
                 </div>
                 <div className="card-footer">
                     <a href="#"className="btn btn-primary btn-lg d-flex justify-content-center" type="button">{props.buttonText}</a>
@@ -32,8 +32,8 @@ const Card = (props) => {
                 <div className="card h-100">
                 <img src={props.cardSrc} className="card-img-top" alt="..." />
                 <div className="card-body">
-                    <h5 className="card-title">{props.cardTitle}</h5>
-                    <p className="card-text">{props.pText}</p>
+                    <h5 className="card-title text-center">{props.cardTitle}</h5>
+                    <p className="card-text text-center">{props.pText}</p>
                 </div>
                 <div className="card-footer">
                     <a href="#"className="btn btn-primary btn-lg d-flex justify-content-center" type="button">{props.buttonText}</a>
@@ -44,8 +44,8 @@ const Card = (props) => {
                 <div className="card h-100">
                 <img src={props.cardSrc} className="card-img-top" alt="..." />
                 <div className="card-body">
-                    <h5 className="card-title">{props.cardTitle}</h5>
-                    <p className="card-text">{props.pText}</p>
+                    <h5 className="card-title text-center">{props.cardTitle}</h5>
+                    <p className="card-text text-center">{props.pText}</p>
                 </div>
                 <div className="card-footer">
                     <a href="#"className="btn btn-primary btn-lg d-flex justify-content-center" type="button">{props.buttonText}</a>
