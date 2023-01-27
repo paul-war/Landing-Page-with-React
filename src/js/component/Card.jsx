@@ -6,49 +6,49 @@ const Card = (props) => {
         <div className="row row-cols-1 row-cols-md-4 g-4 m-3">
             <div className="col">
                 <div className="card h-100 ">
-                <img src="..." className="card-img-top" alt="..."/>
+                <img src={props.cardSrc} className="card-img-top" alt="..."/>
                 <div className="card-body ">
-                    <h5 className="card-title">Card title</h5>
-                    <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <h5 className="card-title">{props.cardTitle}</h5>
+                    <p className="card-text">{props.pText}</p>
                 </div>
                 <div className="card-footer">
-                    <a href="#"className="btn btn-primary btn-lg d-flex justify-content-center" type="button">Find Out More!</a>
+                    <a href="#"className="btn btn-primary btn-lg d-flex justify-content-center" type="button">{props.buttonText}</a>
                 </div>
                 </div>
             </div>
             <div className="col">
                 <div className="card h-100">
-                <img src="..." className="card-img-top" alt="..." />
+                <img src={props.cardSrc} className="card-img-top" alt="..." />
                 <div className="card-body">
-                    <h5 className="card-title">Card title</h5>
+                    <h5 className="card-title">{props.cardTitle}</h5>
                     <p className="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
                 </div>
                 <div className="card-footer">
-                    <a href="#"className="btn btn-primary btn-lg d-flex justify-content-center" type="button">Find Out More!</a>
+                    <a href="#"className="btn btn-primary btn-lg d-flex justify-content-center" type="button">{props.buttonText}</a>
                 </div>
                 </div>
             </div>
             <div className="col">
                 <div className="card h-100">
-                <img src="..." className="card-img-top" alt="..." />
+                <img src={props.cardSrc} className="card-img-top" alt="..." />
                 <div className="card-body">
-                    <h5 className="card-title">Card title</h5>
-                    <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    <h5 className="card-title">{props.cardTitle}</h5>
+                    <p className="card-text">{props.pText}</p>
                 </div>
                 <div className="card-footer">
-                    <a href="#"className="btn btn-primary btn-lg d-flex justify-content-center" type="button">Find Out More!</a>
+                    <a href="#"className="btn btn-primary btn-lg d-flex justify-content-center" type="button">{props.buttonText}</a>
                 </div>
                 </div>
             </div>
             <div className="col">
                 <div className="card h-100">
-                <img src="..." className="card-img-top" alt="..." />
+                <img src={props.cardSrc} className="card-img-top" alt="..." />
                 <div className="card-body">
-                    <h5 className="card-title">Card title</h5>
-                    <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    <h5 className="card-title">{props.cardTitle}</h5>
+                    <p className="card-text">{props.pText}</p>
                 </div>
                 <div className="card-footer">
-                    <a href="#"className="btn btn-primary btn-lg d-flex justify-content-center" type="button">Find Out More!</a>
+                    <a href="#"className="btn btn-primary btn-lg d-flex justify-content-center" type="button">{props.buttonText}</a>
                 </div>
                 </div>
             </div>
@@ -57,17 +57,17 @@ const Card = (props) => {
 };
 
 Card.PropTypes = {
-    jumbotronTitle: PropTypes.string,
-    jumbotronDescription: PropTypes.string,
-    buttonURL: PropTypes.string,
+    cardSrc: PropTypes.string,
+    cardTitle: PropTypes.string,
+    pText: PropTypes.string,
     buttonText: PropTypes.string,
 };
 
 Card.defaultProps = {
-    jumbotronTitle: "Custom jumbotron",
-    jumbotronDescription: "Using a series of utilities, you can create this jumbotron.",
-    buttonURL: "#",
-    buttonText: "Example button",
+    cardSrc: "https://picsum.photos/500/325?grayscale",
+    cardTitle: "Card Title",
+    pText: "Lorem Ipsum Sanctum Totum Locum viajum a la Quiacum Argentinum",
+    buttonText: "Find Out More!",
 };
 
 export default Card;

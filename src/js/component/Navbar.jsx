@@ -5,7 +5,7 @@ const Navbar = (props) => {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
             <div className="container-fluid">
-                <a className="navbar-brand" href="#">Navbar</a>
+                <a className="navbar-brand" href="#">{props.nombreNavbar}</a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
                 </button>
@@ -20,9 +20,6 @@ const Navbar = (props) => {
                     <li className="nav-item">
                     <a className="nav-link" href="#">Pricing</a>
                     </li>
-                    <li className="nav-item">
-                    <a className="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                    </li>
                 </ul>
                 </div>
             </div>
@@ -31,17 +28,11 @@ const Navbar = (props) => {
 };
 
 Navbar.PropTypes = {
-    navbarTitle: PropTypes.string,
-    jumbotronDescription: PropTypes.string,
-    buttonURL: PropTypes.string,
-    buttonText: PropTypes.string,
+    nombreNavbar: PropTypes.string,
 };
 
 Navbar.defaultProps = {
-    navbarTitle: "Start Bootstrap",
-    jumbotronDescription: "Using a series of utilities, you can create this jumbotron.",
-    buttonURL: "#",
-    buttonText: "Example button",
+    nombreNavbar: "My Landing Page",
 };
 
 export default Navbar;
