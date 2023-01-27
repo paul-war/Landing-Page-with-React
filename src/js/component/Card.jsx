@@ -21,7 +21,7 @@ const Card = (props) => {
                 <img src={props.cardSrc} className="card-img-top" alt="..." />
                 <div className="card-body">
                     <h5 className="card-title text-center">{props.cardTitle}</h5>
-                    <p className="card-text text-center">This card has supporting text below as a natural lead-in to additional content.</p>
+                    <p className="card-text text-center">{props.pText}</p>
                 </div>
                 <div className="card-footer">
                     <a href="#"className="btn btn-primary btn-lg d-flex justify-content-center" type="button">{props.buttonText}</a>
@@ -66,7 +66,7 @@ Card.PropTypes = {
 Card.defaultProps = {
     cardSrc: "https://picsum.photos/500/325?grayscale",
     cardTitle: "Card Title",
-    pText: "Lorem Ipsum Sanctum Totum Locum viajum a la Quiacum Argentinum",
+    pText: "Lorem Ipsum Sanctum Totum Locum viajum a la Quiacum Argentinum morte cuore et Punguen Manoteen Billeteren",
     buttonText: "Find Out More!",
 };
 
